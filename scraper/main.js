@@ -68,9 +68,9 @@ var calendar = function(){
             return day_iso(d.toLowerCase())
         
         try{
-
-        }catch{
-            
+            tdhgfshjk();
+        }catch(e){
+            console.log(e);
         }
         
     }
