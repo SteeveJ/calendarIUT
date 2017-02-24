@@ -10,69 +10,80 @@ var calendar = function(){
     url = 'https://ent.univ-paris13.fr/ajax?__application=emploidutemps&__class=EmploiDuTemps&__function=ajaxRender&__args%5B%5D=DUT2%2520INFORMATIQUE%2520(AS)&__args%5B%5D='+semaine;
     
     // TODO : add 1 to semaine, if cheerio object have not text
-
+    var tabJ = Array();
     var heure = function(h){
         return h/4;
     }
     
     var day_iso = function(d){
-        if(d == 'lundi')
-            return "Monday"
-        if(d == 'mardi')
-            return "Tuesday"
-        if(d == 'mercredi')
-            return "Wednesday"
-        if(d == 'Jeudi')
-            return "Thursday"
-        if(d == 'vendredi')
-            return "Friday"
-        return 0;
+        return null;
     }
 
     var month_iso = function(m){
-        if(m.toLowerCase() == 'Janvier')
+        if(m.toLowerCase() == 'janvier')
             return "January"
-        if(m.toLowerCase() == 'Février')
+        if(m.toLowerCase() == 'février')
             return "February"
-        if(m.toLowerCase() == 'Mars')
+        if(m.toLowerCase() == 'mars')
             return "March"
-        if(m.toLowerCase() == 'Avril')
+        if(m.toLowerCase() == 'avril')
             return "April"
-        if(m.toLowerCase() == 'Mai')
+        if(m.toLowerCase() == 'mai')
             return "May"
-        if(m.toLowerCase() == 'Juin')
+        if(m.toLowerCase() == 'juin')
             return "June"
-        if(m.toLowerCase() == 'Juillet')
+        if(m.toLowerCase() == 'juillet')
             return "July"
-        if(m.toLowerCase() == 'Août')
+        if(m.toLowerCase() == 'août')
             return "Auguste"
-        if(m.toLowerCase() == 'Septembre')
+        if(m.toLowerCase() == 'septembre')
             return "September"
-        if(m.toLowerCase() == 'Octobre')
+        if(m.toLowerCase() == 'octobre')
             return "October"
-        if(m.toLowerCase() == 'Novembre')
+        if(m.toLowerCase() == 'novembre')
             return "November"
-        if(m.toLowerCase() == 'Décembre')
+        if(m.toLowerCase() == 'décembre')
             return "December"
-        return 0;
+        return null;
+    }
+    
+    var check_jour = function(j){
+        j=parseInt(j);
+        if(j >= 1 && j <= 31)
+            return j;
+        return null;
     }
 
+    var check_year = function(y){
+        y=parseInt(y);
+        if(y>2000 && y<2050)
+            return y
+        return null;
+    }
+    var date_iso = function(date){
+        if(date.length >= 3)
+            return date[2]+"-"+date[1]+"-"+date[0]
+        return null;
+    }
     var format_date = function(d){
-        var bool_day = 0;
-        if(d.toLowerCase() == 'lundi' && d.toLowerCase() == 'lundi' && d.toLowerCase() == 'lundi'
-            && d.toLowerCase() == 'lundi' && d.toLowerCase() == 'lundi' 
-            && d.toLowerCase() == 'lundi' && d.toLowerCase() == 'lundi' && d.toLowerCase() == 'lundi'){
-                bool_day = 1;
+        jourS = day_iso(d);
+        jourI = check_jour(d);
+        month = month_iso(d);
+        year = check_year(d);
+        if(jourS != null)
+            return "";
+        if(jourI != null)
+            return jourI;
+        if(month != null)
+            return month;
+        if(year != null)
+            return year;
+    }
+    var fusionModule = function(d){
+        for(var i = 0; i < tabJ.length; i++){
+            tabJ[i].date = d[i];
+            console.log(tabJ[i]);
         }
-        if(bool_day == 1)
-            return day_iso(d.toLowerCase())
-        
-        try{
-            tdhgfshjk();
-        }catch(e){
-            console.log(e);
-        }
-        
     }
 
     var TailleStringToInt = function(s){
@@ -90,7 +101,8 @@ var calendar = function(){
     }
     // variables
     
-    var tabJ = Array();
+    
+    
     request(url, function(error, response, html){
 
         if(!error){
@@ -107,8 +119,8 @@ var calendar = function(){
                     "heure_fin_2": null,
                     "cours_1": null,
                     "cours_2": null,
+                    "date": null
                 };
-
                 var bar_h = 0;
                 var heure_1 = 0;
                 var heure_2 = 0;
@@ -138,16 +150,25 @@ var calendar = function(){
                 
             });
             var date = [];
+            var count = 0;
             $('.edt_day_block_left_date').filter(function(){
                 var data = $(this);
-                var menu = "";
+                var s = "";
                 (data.children()).each(function(i, element){
-                    console.log($(this).text().trim());
+                    if(count<=4){
+                        // console.log($(this).text().trim());
+                        if(format_date($(this).text().trim()) != undefined){
+                            s += (format_date($(this).text().trim())+" ");
+                        }
+                    }
                 });
-
-                    console.log("######", date, "#####");
-                
+                if((date_iso(s.split(" "))) != null)
+                    date.push(date_iso(s.split(" ")));
+                    
+                count++;
             });
+
+            fusionModule(date);
 
             fs.writeFile(file_data, JSON.stringify(tabJ, null, 4), function (err,data) {
                 if (err) {
@@ -165,4 +186,4 @@ var loadDataCalendar = function(){
 }
 
 calendar();
-console.log(loadDataCalendar());
+// console.log(loadDataCalendar());

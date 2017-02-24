@@ -13,7 +13,9 @@
   },
   "author": "Jerent Steeve",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.1",
+    "request"    : "latest",
+    "cheerio"    : "latest"
   },
   "license": "MIT"
 }
