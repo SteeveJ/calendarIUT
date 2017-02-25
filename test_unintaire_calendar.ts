@@ -31,51 +31,51 @@ function test_convertDayString(){
 function test_convertMonth(){
     let res: string;
     res = c.convertMonth("JANVIER");
-    if(res != "January")
+    if(res != "01")
         return error("La conversion janvier n'est pas correct pour le mois");
     
     res = c.convertMonth("FévrieR");
-    if(res != "February")
+    if(res != "02")
         return error("La conversion fevrier n'est pas correct pour le mois");
     
     res = c.convertMonth("mars");
-    if(res != "March")
+    if(res != "03")
         return error("La conversion mars n'est pas correct pour le mois");
     
     res = c.convertMonth("Avril");
-    if(res != "April")
+    if(res != "04")
         return error("La conversion avril n'est pas correct pour le mois");
     
     res = c.convertMonth("mai");
-    if(res != "May")
+    if(res != "05")
         return error("La conversion mai n'est pas correct pour le mois");
     
     res = c.convertMonth("juin");
-    if(res != "June")
+    if(res != "06")
         return error("La conversion juin n'est pas correct pour le mois");
 
     res = c.convertMonth("Juillet");
-    if(res != "July")
+    if(res != "07")
         return error("La conversion juillet n'est pas correct pour le mois");
     
     res = c.convertMonth("août");
-    if(res != "Auguste")
+    if(res != "08")
         return error("La conversion aout n'est pas correct pour le mois");
     
     res = c.convertMonth("septembre");
-    if(res != "September")
+    if(res != "09")
         return error("La conversion septembre n'est pas correct pour le mois");
     
     res = c.convertMonth("Octobre");
-    if(res != "October")
+    if(res != "10")
         return error("La conversion octobre n'est pas correct pour le mois");
 
     res = c.convertMonth("NoVemBre");
-    if(res != "November")
+    if(res != "11")
         return error("La conversion novembre n'est pas correct pour le mois");
     
     res = c.convertMonth("décembre");
-    if(res != "December")
+    if(res != "12")
         return error("La conversion decembre n'est pas correct pour le mois");
     
     res = c.convertMonth(2);
@@ -86,7 +86,7 @@ function test_convertMonth(){
 }
 
 function test_checkDayToInt(){
-    let res: any;
+    let res: number;
 
     res = c.checkDayToInt(74);
     if(res != null)
@@ -101,7 +101,7 @@ function test_checkDayToInt(){
         return error("3 - Le resultat ne renvoie pas null");
     
     res = c.checkDayToInt(12.54);
-    if(res != 12)
+    if(res != 13)
         return error("4 - Le resultat ne renvoie pas null");
     
     res = c.checkDayToInt(31);
@@ -112,26 +112,26 @@ function test_checkDayToInt(){
 }
 
 function test_checkYear(){
-    let res: any;
+    let res: number;
 
-    res = c.checkDayToInt(7500);
+    res = c.checkYear(7500);
     if(res != null)
         return error("1 - Le resultat ne renvoie pas null");
     
-    res = c.checkDayToInt(-7500);
+    res = c.checkYear(-7500);
     if(res != null)
         return error("2 - Le resultat ne renvoie pas null");
     
-    res = c.checkDayToInt(2000);
-    if(res != 1)
+    res = c.checkYear(2000);
+    if(res != null)
         return error("3 - Le resultat ne renvoie pas null");
     
-    res = c.checkDayToInt(2020.54);
-    if(res != 2020)
-        return error("4 - Le resultat ne renvoie pas null");
+    res = c.checkYear(2020.54);    
+    if(res != 2021)
+        return error("4 - Le resultat ne renvoie pas 2021");
     
-    res = c.checkDayToInt(2050);
-    if(res != 2050)
+    res = c.checkYear(2050);
+    if(res != null)
         return error("5 - Le resultat ne renvoie pas null");
     
     return 1;
@@ -169,18 +169,18 @@ function test_formatDate(){
     
     res = c.formatDate("Janvier");
 
-    if(res != "January")
+    if(res != "01")
         return error("l'année est incorrect");
 
     res = c.formatDate("Lundi");
-    if(res != "")
+    if(res != undefined)
         return error("Le programme devait renvoyer \"\" ");
     
     res = c.formatDate("2020");
 
     if(res != 2020)
         return error("L'année est incorrect");
-    // res = undefined;
+
     res = c.formatDate("HEllo");
 
     if(res != undefined)
@@ -188,9 +188,73 @@ function test_formatDate(){
     return 1;
 }
 
+function test_completionModuleWithDate(){
+    let date : Array<string> = ["1994-03-24", "1996-04-17"];
+    c.tabObjModule = [
+        {
+            "heure_debut_1": 9,
+            "heure_fin_1": 13,
+            "heure_fin_2": 18,
+            "cours_1": "PromotionSalles O104, R100 CRITMatière Compléments de bases de données",
+            "cours_2": "PromotionSalles O104, P201 CRITMatière Bases de la programmation orientée objet",
+            "date": null,
+            "heure_debut_2": 14
+        },
+        {
+            "heure_debut_1": 9,
+            "heure_fin_1": 13,
+            "heure_fin_2": 18,
+            "cours_1": "PromotionSalles O104, R100 CRIT",
+            "cours_2": "CTDPromotionSalles O104, R100 CRITMatière Programmation Web",
+            "date": null,
+            "heure_debut_2": 14
+        }
+    ];
+    c.completionModuleWithDate(date);
+
+    for(var i = 0; i < c.tabObjModule.length; i++){
+        if(c.tabObjModule[i].date == null)
+            return error("Le champ date n°"+i+" est vide.");
+    }
+
+    return 1;
+}
+
+function test_convertWidthToInt(){
+    let res;
+    let width: string="width: 15px;";
+    res = c.convertWidthToInt(width);
+    if(typeof res != "number")
+        return error("Le type de width n'est pas valid");
+    
+    if(res != 15)
+        return error("width != 15, actuellement il vaut "+res);
+    
+    return 1;
+}
+
+function test_widthToTimes(){
+    let res;
+    res = c.widthToTimes("width: 150px;");
+    if(res != 3)
+        return error("Le resultat de width: 150px est 3 et non "+res);
+    res = c.widthToTimes("width: 280px;");
+    if(res != 4)
+        return error("Le resultat de width: 280px est 4 et non "+res);
+    res = c.widthToTimes("width: 90px;")
+    if(res != 2)
+        return error("Le resultat de width: 90px est 2 et non "+res);
+    
+    res = c.widthToTimes("width: -1px;");
+    if(res != 1)
+        return error("Le resultat de width: -1px est 1 et non "+res);        
+
+    return 1;
+}
+
 function test(){
     let som: number = 0;
-    let nbTest: number = 7;
+    let nbTest: number = 10;
     som += test_convertDayString();
     som += test_convertMonth();
     som += test_timeBarToTime();
@@ -198,11 +262,14 @@ function test(){
     som += test_checkYear();
     som += test_dateIso();
     som += test_formatDate();
+    som += test_completionModuleWithDate();
+    som += test_convertWidthToInt();
+    som += test_widthToTimes();
 
     if(som != nbTest)
         error("TEST - "+som+"/"+nbTest);
     else
-        console.log("SUCCESS TEST");
+        console.log("SUCCESS TEST "+som+"/"+nbTest);
 }
 
 test();

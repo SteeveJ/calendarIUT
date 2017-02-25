@@ -2,13 +2,18 @@
 
 
 export class Calendar{
-    tabObjModule:  any[];
+    tabObjModule = [];
     date: Array<string>;
     
-    constructor(private url: string, private semaine: number){
+    constructor(public url: string, public semaine: number){
         this.url = this.url+this.semaine;
     }
 
+    setTabObjModule(value: any){
+        this.tabObjModule.push(value);
+    }
+
+    // methode
     barToTime(time: number){
         return time/4;
     }
@@ -20,42 +25,42 @@ export class Calendar{
     convertMonth(month: any){
         if(typeof month == "string"){
             if(month.toLowerCase() == 'janvier')
-                return "January";
+                return "01";
             if(month.toLowerCase() == 'février')
-                return "February";
+                return "02";
             if(month.toLowerCase() == 'mars')
-                return "March";
+                return "03";
             if(month.toLowerCase() == 'avril')
-                return "April";
+                return "04";
             if(month.toLowerCase() == 'mai')
-                return "May";
+                return "05";
             if(month.toLowerCase() == 'juin')
-                return "June";
+                return "06";
             if(month.toLowerCase() == 'juillet')
-                return "July";
+                return "07";
             if(month.toLowerCase() == 'août')
-                return "Auguste";
+                return "08";
             if(month.toLowerCase() == 'septembre')
-                return "September";
+                return "09";
             if(month.toLowerCase() == 'octobre')
-                return "October";
+                return "10";
             if(month.toLowerCase() == 'novembre')
-                return "November";
+                return "11";
             if(month.toLowerCase() == 'décembre')
-                return "December";
+                return "12";
         }
         return null;
     }
 
     checkDayToInt(day: any){
-        if(parseInt(day) >= 1 && parseInt(day) <= 31)
-            return parseInt(day);
+        if(Math.round(day) >= 1 && Math.round(day) <= 31)
+            return Math.round(day);
         return null;
     }
 
     checkYear(year: any){
-        if(parseInt(year)>2000 && parseInt(year)<2050)
-            return parseInt(year);
+        if(Math.round(year)>2000 && Math.round(year)<2050)
+            return Math.round(year);
         return null;
     }
 
@@ -91,14 +96,15 @@ export class Calendar{
         return parseInt(widthCss.replace("px;", "").trim());
     }
 
-    WidthToTimes(time: string){
-        if(this.convertWidthToInt(time) > 250){
+    widthToTimes(width: string){
+        if(this.convertWidthToInt(width) >= 250)
             return 4;
-        }else if(this.convertWidthToInt(time) > 150 && this.convertWidthToInt(time)){
+        else if(this.convertWidthToInt(width) >= 150 && this.convertWidthToInt(width) < 250)
             return 3;
-        }else{
+        else if(this.convertWidthToInt(width) >= 50 && this.convertWidthToInt(width) < 150)
             return 2;
-        }
+        else
+            return 1;
     }
 }
 
