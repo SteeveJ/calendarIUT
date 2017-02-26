@@ -185,5 +185,5 @@ var loadDataCalendar = function(){
     return JSON.parse(fs.readFileSync(file_data).toString());
 }
 
-calendar();
+// calendar();
 // console.log(loadDataCalendar());

@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "tsc calendar.ts test_unintaire_calendar.ts && node test_unintaire_calendar.js",
-    "start": "electron ."
+    "start": "tsc calendar.ts && electron ."
   },
   "repository": {
     "type": "git",
@@ -13,9 +13,12 @@
   },
   "author": "Jerent Steeve",
   "devDependencies": {
-    "electron": "^1.4.1",
-    "request"    : "latest",
-    "cheerio"    : "latest"
+    "electron": "^1.4.1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fullcalendar": "^3.2.0",
+    "request": "latest",
+    "cheerio": "latest"
+  }
 }

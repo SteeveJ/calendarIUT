@@ -1,0 +1,497 @@
+[
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalles O104, R100 CRITMatière Compléments de bases de données",
+        "cours_2": "PromotionSalles O104, P201 CRITMatière Bases de la programmation orientée objet",
+        "date": "2017-02-20"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalles O104, R100 CRIT",
+        "cours_2": "CTDPromotionSalles O104, R100 CRITMatière Programmation Web",
+        "date": "2017-02-21"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalles O104, P203 CRIT.INFO. 26 PCMatière Compléments de bases de données",
+        "cours_2": "PromotionSalles O104, R205 CRIT.INFO.Matière Méthodologie de la production d'applications",
+        "date": "2017-02-22"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalles O104, R100 CRITMatière Bases de la programmation orientée objet",
+        "cours_2": "CTDPromotionSalles O104, R100 CRITMatière Programmation Web",
+        "date": "2017-02-23"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalles O104, P202 CRIT.RESEAUXMatière Méthodologie de la production d'applications",
+        "cours_2": null,
+        "date": "2017-02-24"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 11,
+        "heure_debut_2": 12,
+        "heure_fin_2": 16,
+        "cours_1": "PromotionSalle à préciserMatière Mathématiques 2",
+        "cours_2": "PromotionSalle à préciserMatière Gestion 2",
+        "date": "2017-03-13"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Bases de la programmation orientée objet",
+        "cours_2": "PromotionSalle à préciserMatière Mathématiques 2",
+        "date": "2017-03-14"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Anglais 2",
+        "cours_2": "PromotionSalle à préciserMatière Architecture des réseaux",
+        "date": "2017-03-15"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 17,
+        "cours_1": "PromotionSalle à préciserMatière Bases de la programmation orientée objet",
+        "cours_2": "PromotionSalle à préciserMatière Expression-Communication 2",
+        "date": "2017-03-16"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Compléments de bases de données",
+        "cours_2": "PromotionSalle à préciserMatière Programmation Web",
+        "date": "2017-03-17"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Expression-Communication 2",
+        "cours_2": "PromotionSalle à préciserMatière Mathématiques 2",
+        "date": "2017-04-17"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Anglais 2",
+        "cours_2": "PromotionSalle à préciserMatière Architecture des réseaux",
+        "date": "2017-04-18"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Introduction aux interfaces homme-machine",
+        "cours_2": "PromotionSalle à préciserMatière Méthodologie de la production d'applications",
+        "date": "2017-04-19"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Compléments de bases de données",
+        "cours_2": "PromotionSalle à préciserMatière Programmation Web",
+        "date": "2017-04-20"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle O104Matière Mathématiques 2",
+        "cours_2": "PromotionSalle à préciserRattrapages",
+        "date": "2017-04-21"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle O104Matière Mathématiques 2",
+        "cours_2": "PromotionSalles O104, R200 CRIT.INFO.Matière Méthodologie de la production d'applications",
+        "date": "2017-04-03"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalles O104, R100 CRITMatière Compléments de bases de données",
+        "cours_2": null,
+        "date": "2017-04-04"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalles O104, R100 CRITMatière Compléments de bases de données",
+        "cours_2": null,
+        "date": "2017-04-05"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle O104Matière Mathématiques 2",
+        "cours_2": null,
+        "date": "2017-04-06"
+    },
+    {
+        "heure_debut_1": 14,
+        "heure_fin_1": 18,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciser",
+        "cours_2": null,
+        "date": "2017-04-07"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle R100 CRITMatière Compléments de bases de données",
+        "cours_2": "PromotionSalle R202 CRIT.INFO.Matière Bases de la programmation orientée objet",
+        "date": "2017-02-27"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Expression-Communication 2",
+        "cours_2": "PromotionSalle à préciserMatière Architecture des réseaux",
+        "date": "2017-02-28"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalles O104, R100 CRITMatière Bases de la programmation orientée objet",
+        "cours_2": "PromotionSalle à préciserMatière Méthodologie de la production d'applications",
+        "date": "2017-03-01"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "CTDPromotionSalle O104Matière Mathématiques 2",
+        "cours_2": "PromotionSalle à préciserMatière Programmation Web",
+        "date": "2017-03-02"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Expression-Communication 2",
+        "cours_2": "PromotionSalle à préciserMatière Gestion 2",
+        "date": "2017-03-03"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Mathématiques 2",
+        "cours_2": "PromotionSalle à préciserMatière Bases de la programmation orientée objet",
+        "date": "2017-03-27"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 12,
+        "heure_debut_2": 13.75,
+        "heure_fin_2": 17.75,
+        "cours_1": "PromotionSalle à préciserMatière Anglais 2",
+        "cours_2": "PromotionSalle à préciserMatière Bases de la programmation orientée objet",
+        "date": "2017-03-28"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Programmation Web",
+        "cours_2": "PromotionSalle à préciserMatière Méthodologie de la production d'applications",
+        "date": "2017-03-29"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Compléments de bases de données",
+        "cours_2": "PromotionSalle à préciserMatière Architecture des réseaux",
+        "date": "2017-03-30"
+    },
+    {
+        "heure_debut_1": 11,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Gestion 2",
+        "cours_2": "PromotionSalle à préciserMatière Gestion 2",
+        "date": "2017-03-31"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Expression-Communication 2",
+        "cours_2": "PromotionSalle à préciserMatière Bases de la programmation orientée objet",
+        "date": "2017-04-10"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Anglais 2",
+        "cours_2": "PromotionSalle à préciserMatière Architecture des réseaux",
+        "date": "2017-04-11"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciserMatière Bases de la programmation orientée objet",
+        "cours_2": null,
+        "date": "2017-04-12"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Compléments de bases de données",
+        "cours_2": "PromotionSalle à préciserMatière Programmation Web",
+        "date": "2017-04-13"
+    },
+    {
+        "heure_debut_1": 11,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Gestion 2",
+        "cours_2": "PromotionSalle à préciserMatière Gestion 2",
+        "date": "2017-04-14"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Compléments de bases de données",
+        "cours_2": "PromotionSalle à préciserMatière Bases de la programmation orientée objet",
+        "date": "2017-03-20"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Anglais 2",
+        "cours_2": "PromotionSalle à préciserMatière Architecture des réseaux",
+        "date": "2017-03-21"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Bases de la programmation orientée objet",
+        "cours_2": "PromotionSalle à préciserMatière Méthodologie de la production d'applications",
+        "date": "2017-03-22"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Expression-Communication 2",
+        "cours_2": "PromotionSalle à préciserMatière Programmation Web",
+        "date": "2017-03-23"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Expression-Communication 2",
+        "cours_2": "PromotionSalle à préciserMatière Réseaux",
+        "date": "2017-03-24"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciserMatière Conception et développement d'applications mobiles",
+        "cours_2": null,
+        "date": "2017-03-06"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Introduction aux interfaces homme-machine",
+        "cours_2": "PromotionSalle à préciserMatière Mathématiques 2",
+        "date": "2017-03-07"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciserMatière Compléments de bases de données",
+        "cours_2": null,
+        "date": "2017-03-08"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Mathématiques 2",
+        "cours_2": "PromotionSalle R200 CRIT.INFO.Matière Réseaux",
+        "date": "2017-03-09"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciserMatière Anglais 2",
+        "cours_2": null,
+        "date": "2017-03-10"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 17,
+        "cours_1": "PromotionSalle à préciserMatière Introduction aux interfaces homme-machine",
+        "cours_2": "PromotionSalle à préciserMatière Anglais 2",
+        "date": "2017-05-01"
+    },
+    {
+        "heure_debut_1": 14,
+        "heure_fin_1": 18,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciserMatière Introduction aux interfaces homme-machine",
+        "cours_2": null,
+        "date": "2017-05-02"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Mathématiques 2",
+        "cours_2": "PromotionSalle R200 CRIT.INFO.Matière Réseaux",
+        "date": "2017-05-03"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciserMatière Anglais 2",
+        "cours_2": null,
+        "date": "2017-05-04"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciserMatière Introduction aux interfaces homme-machine",
+        "cours_2": null,
+        "date": "2017-05-05"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Expression-Communication 2",
+        "cours_2": "PromotionSalle à préciserMatière Introduction aux interfaces homme-machine",
+        "date": "2017-05-08"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Mathématiques 2",
+        "cours_2": "PromotionSalle à préciserMatière Programmation Web",
+        "date": "2017-05-09"
+    },
+    {
+        "heure_debut_1": 10,
+        "heure_fin_1": 13,
+        "heure_debut_2": null,
+        "heure_fin_2": null,
+        "cours_1": "PromotionSalle à préciserMatière Anglais 2",
+        "cours_2": null,
+        "date": "2017-05-10"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 18,
+        "cours_1": "PromotionSalle à préciserMatière Introduction aux interfaces homme-machine",
+        "cours_2": "PromotionSalle à préciserMatière Méthodologie de la production d'applications",
+        "date": "2017-05-11"
+    },
+    {
+        "heure_debut_1": 9,
+        "heure_fin_1": 13,
+        "heure_debut_2": 14,
+        "heure_fin_2": 17,
+        "cours_1": "PromotionSalle à préciserMatière Compléments de bases de données",
+        "cours_2": "PromotionSalle à préciserMatière Anglais 2",
+        "date": "2017-05-12"
+    }
+]

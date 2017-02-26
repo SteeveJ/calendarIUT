@@ -1,5 +1,4 @@
 "use strict";
-exports.__esModule = true;
 var calendar_1 = require("./calendar");
 var c = new calendar_1.Calendar('https://ent.univ-paris13.fr/ajax?__application=emploidutemps&__class=EmploiDuTemps&__function=ajaxRender&__args%5B%5D=DUT2%2520INFORMATIQUE%2520(AS)&__args%5B%5D=', 8);
 function error(error) {
@@ -72,7 +71,7 @@ function test_checkDayToInt() {
     if (res != null)
         return error("2 - Le resultat ne renvoie pas null");
     res = c.checkDayToInt(1);
-    if (res != 1)
+    if (res != "01")
         return error("3 - Le resultat ne renvoie pas null");
     res = c.checkDayToInt(12.54);
     if (res != 13)

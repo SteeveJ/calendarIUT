@@ -1,17 +1,22 @@
 "use strict";
 
-
 export class Calendar{
-    tabObjModule = [];
     date: Array<string>;
-    
-    constructor(public url: string, public semaine: number){
-        this.url = this.url+this.semaine;
+    fullUrl: string;
+    tabObjModule: any = [];
+    tabDate: any = [];
+    constructor(public url: string, public week: number){
+        this.fullUrl = this.url+this.week;
     }
 
     setTabObjModule(value: any){
         this.tabObjModule.push(value);
     }
+    
+    setTabDate(value: any){
+        this.tabDate.push(value);
+    }
+
 
     // methode
     barToTime(time: number){
@@ -54,7 +59,10 @@ export class Calendar{
 
     checkDayToInt(day: any){
         if(Math.round(day) >= 1 && Math.round(day) <= 31)
-            return Math.round(day);
+            if(Math.round(day) < 10)
+                return "0"+Math.round(day);
+            else
+                return Math.round(day);
         return null;
     }
 

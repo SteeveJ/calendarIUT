@@ -1,14 +1,17 @@
 "use strict";
-exports.__esModule = true;
 var Calendar = (function () {
-    function Calendar(url, semaine) {
+    function Calendar(url, week) {
         this.url = url;
-        this.semaine = semaine;
+        this.week = week;
         this.tabObjModule = [];
-        this.url = this.url + this.semaine;
+        this.tabDate = [];
+        this.fullUrl = this.url + this.week;
     }
     Calendar.prototype.setTabObjModule = function (value) {
         this.tabObjModule.push(value);
+    };
+    Calendar.prototype.setTabDate = function (value) {
+        this.tabDate.push(value);
     };
     // methode
     Calendar.prototype.barToTime = function (time) {
@@ -48,7 +51,10 @@ var Calendar = (function () {
     };
     Calendar.prototype.checkDayToInt = function (day) {
         if (Math.round(day) >= 1 && Math.round(day) <= 31)
-            return Math.round(day);
+            if (Math.round(day) < 10)
+                return "0" + Math.round(day);
+            else
+                return Math.round(day);
         return null;
     };
     Calendar.prototype.checkYear = function (year) {

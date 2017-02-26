@@ -86,7 +86,7 @@ function test_convertMonth(){
 }
 
 function test_checkDayToInt(){
-    let res: number;
+    let res: any;
 
     res = c.checkDayToInt(74);
     if(res != null)
@@ -97,7 +97,7 @@ function test_checkDayToInt(){
         return error("2 - Le resultat ne renvoie pas null");
     
     res = c.checkDayToInt(1);
-    if(res != 1)
+    if(res != "01")
         return error("3 - Le resultat ne renvoie pas null");
     
     res = c.checkDayToInt(12.54);
